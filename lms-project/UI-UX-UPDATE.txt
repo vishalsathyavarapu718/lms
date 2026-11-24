@@ -1,0 +1,13 @@
+kode LEARN LMS - UI/UX UPDATE
+
+This update refreshes the shared CSS only. Existing HTML pages and links are preserved.
+Improvements: responsive navigation/layout, polished dashboard statistic cards, improved
+course cards, forms, buttons, tables, spacing, hover/focus states, and reduced-motion support.
+
+HOW TO RUN:
+1. Extract this ZIP.
+2. Open the lms-project folder in VS Code.
+3. Open index.html in a browser (or use the VS Code Live Server extension).
+
+NOTE: The current project is a static HTML/CSS prototype. Login and registration screens
+do not yet authenticate or save accounts to a database; that requires backend integration.

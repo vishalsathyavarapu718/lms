@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create account –  kode Learn</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="auth">
+  <div class="auth-brand">
+    <div style="font:1.4rem Georgia,serif">kode Learn</div>
+    <h1>Start learning today.</h1>
+    <small>© 2026 kode Learn</small>
+  </div>
+  <div class="auth-form">
+    <form class="auth-card" action="dashboard.html">
+      <h1>Create account</h1>
+      <p class="sub">It takes less than a minute.</p>
+      <label for="name">Full name</label><input id="name" type="text" required>
+      <label for="email">Email</label><input id="email" type="email" required>
+      <label for="role">I am a</label>
+      <select id="role"><option>Student</option><option>Instructor</option></select>
+      <label for="pw">Password</label><input id="pw" type="password" minlength="8" placeholder="At least 8 characters" required>
+      <button class="btn block" type="submit">Create account</button>
+      <p class="links sub">Already registered? <a href="index.html">Sign in</a></p>
+    </form>
+  </div>
+</div>
+</body>
+</html>

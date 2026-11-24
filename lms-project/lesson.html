@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson –  kode Learn</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="logo">  kode Learn</div>
+    <nav class="nav" aria-label="Main">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="courses.html">My courses</a>
+      <a href="lesson.html" class="active">Lessons</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="attendance.html">Attendance</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="grades.html">Grades</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+    <div class="who"><b>vishal</b><br>Semester 3<br><a href="index.html">Sign out</a></div>
+  </aside>
+  <main>
+    <p class="sub">My courses / Data Structures</p>
+    <h1>Lesson 9: Binary search trees</h1>
+    <div class="lesson">
+      <div>
+        <div class="player">Video · 18 min</div>
+        <div class="panel">
+          <h2>What is a binary search tree?</h2>
+          <p>Every node follows one rule: values in its left subtree are smaller and values in its right subtree are larger. A lookup can skip half of the remaining nodes at each step.</p>
+          <h2>Searching for a value</h2>
+          <p>Start at the root. Go left if the target is smaller, right if it is larger, and stop when you find it or reach an empty spot.</p>
+<pre>function search(node, target) {
+  if (node === null) return false;
+  if (target === node.value) return true;
+  return target &lt; node.value
+    ? search(node.left, target)
+    : search(node.right, target);
+}</pre>
+          <p class="sub">Balanced trees search in O(log n). Sorted inserts can degrade this to O(n).</p>
+        </div>
+      </div>
+      <div class="panel"><h2>Course outline</h2>
+        <details open><summary>Unit 2: Trees</summary><ul><li>Lesson 7: Tree basics</li><li>Lesson 8: Traversals</li><li>Lesson 9: Binary search trees</li></ul></details>
+        <details><summary>Unit 1: Foundations</summary><ul><li>Lesson 1: Arrays</li><li>Lesson 2: Linked lists</li></ul></details>
+        <details><summary>Unit 3: Graphs</summary><ul><li>Lesson 10: Graph basics</li><li>Lesson 11: BFS and DFS</li></ul></details>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

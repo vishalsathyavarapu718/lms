@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Attendance – kode Learn</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="logo">kode Learn</div>
+    <nav class="nav" aria-label="Main">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="courses.html">My courses</a>
+      <a href="lesson.html">Lessons</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="attendance.html" class="active">Attendance</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="grades.html">Grades</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+    <div class="who"><b>vishal</b><br>Semester 3<br><a href="index.html">Sign out</a></div>
+  </aside>
+  <main>
+    <h1>Attendance</h1>
+    <p class="sub">You need at least 75% in every course to sit the final exam.</p>
+    <div class="stats">
+      <div><strong>91%</strong><span>Overall</span></div>
+      <div><strong>78</strong><span>Classes attended</span></div>
+      <div><strong>6</strong><span>Absences</span></div>
+      <div><strong>2</strong><span>Late arrivals</span></div>
+    </div>
+    <div class="panel wrap"><h2>By course</h2><table>
+      <thead><tr><th>Course</th><th>Held</th><th>Attended</th><th>Absent</th><th>Percentage</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Data Structures</td><td>24</td><td>23</td><td>1</td><td>94%</td><td><span class="tag ok">Good</span></td></tr>
+        <tr><td>Databases</td><td>20</td><td>18</td><td>2</td><td>89%</td><td><span class="tag ok">Good</span></td></tr>
+        <tr><td>Social Studies</td><td>12</td><td>11</td><td>1</td><td>96%</td><td><span class="tag ok">Good</span></td></tr>
+        <tr><td>Discrete Maths</td><td>28</td><td>23</td><td>5</td><td>82%</td><td><span class="tag late">Watch</span></td></tr>
+      </tbody>
+    </table></div>
+    <div class="panel wrap"><h2>Recent classes</h2><table>
+      <thead><tr><th>Date</th><th>Course</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Mon 23 Nov</td><td>Data Structures</td><td><span class="tag ok">Present</span></td></tr>
+        <tr><td>Fri 20 Nov</td><td>Discrete Maths</td><td><span class="tag late">Absent</span></td></tr>
+        <tr><td>Thu 19 Nov</td><td>Databases</td><td><span class="tag ok">Present</span></td></tr>
+        <tr><td>Wed 18 Nov</td><td>Data Structures</td><td><span class="tag">Late</span></td></tr>
+        <tr><td>Tue 17 Nov</td><td>Databases</td><td><span class="tag ok">Present</span></td></tr>
+      </tbody>
+    </table></div>
+  </main>
+</div>
+</body>
+</html>
